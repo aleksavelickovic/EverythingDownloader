@@ -1,0 +1,10 @@
+{
+    "scripts": {
+      "dev:backend": "cd backend && uv run fastapi dev src/api/main.py",
+      "prod:backend": "cd backend && uv run fastapi run src/api/main.py",
+      "sync:backend": "cd backend && uv sync",
+      "test:backend": "cd backend && uv run pytest",
+      "lint:backend": "cd backend && uv run ruff check src",
+      "format:backend": "cd backend && uv run ruff format src"
+    }
+  }
